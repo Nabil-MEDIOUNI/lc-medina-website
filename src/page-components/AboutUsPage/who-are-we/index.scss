@@ -1,0 +1,264 @@
+.about-us-page {
+  .who-are-we {
+    position: relative;
+    margin-top: 6rem;
+    @keyframes image-sliding {
+      0%,
+      100% {
+        top: 0;
+      }
+      50% {
+        top: 3.5rem;
+      }
+    }
+
+    @keyframes pulse-border {
+      0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .medina-img,
+    .aiesec-img {
+      position: relative;
+      width: 363px;
+      z-index: 1;
+      top: 0;
+      cursor: pointer;
+      animation: image-sliding 10s infinite ease-in-out;
+      transform: scale(1);
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    .medina_1-img {
+      width: 403px;
+    }
+    .alq-img {
+      width: 300px;
+    }
+    .medina_1-img,
+    .alq-img {
+      z-index: 0;
+      position: absolute;
+      left: 12rem;
+      top: 3rem;
+      cursor: pointer;
+      animation: image-sliding 10s infinite 4s ease-in-out;
+      transition: 0.1s ease-in-out;
+      transform: scale(1);
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    @media (max-width: 900px) {
+      margin-top: 4rem;
+      .section-1,
+      .section-2 {
+        flex-direction: column;
+      }
+      .section-1 {
+        .right-side {
+          width: 100% !important;
+          margin-top: 2rem;
+          .all-counters {
+            .double-counters {
+              flex-direction: column;
+              align-items: initial;
+            }
+          }
+        }
+      }
+      .section-2 {
+        .left-side {
+          width: 100% !important;
+        }
+      }
+      .section-1,
+      .section-2 {
+        .what-we-do {
+          font-size: 18px !important;
+          padding: 0 15px;
+        }
+        .description {
+          font-size: 16px !important;
+          padding: 0 15px;
+        }
+      }
+      .section-2 {
+        margin-top: 2rem !important;
+        .left-side {
+          .play-video-btn {
+            padding: 0 15px;
+            .watch_video {
+              h5,
+              p {
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+        .right-side {
+          left: -2rem !important;
+          .medina-img {
+            width: 221px;
+          }
+          .medina_1-img {
+            width: 230px;
+            left: 3rem;
+          }
+        }
+      }
+      .wave-img {
+        bottom: 0 !important;
+      }
+      .alq-img {
+        left: 3rem;
+        width: 185px;
+      }
+      .aiesec-img {
+        width: 220px;
+      }
+    }
+
+    .section-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      .left-side {
+        position: relative;
+        margin-bottom: 5rem;
+      }
+      .right-side {
+        width: 35%;
+        .what-we-do {
+          font-family: Raleway-Bold;
+          font-size: 28px;
+          color: #495057;
+        }
+        .description {
+          font-size: 18px;
+          color: #adb5bd;
+          margin-top: 18px;
+          margin-bottom: 24px;
+          line-height: 24px;
+        }
+        .all-counters {
+          .double-counters {
+            .single-counter {
+              margin-right: 2rem;
+              margin-bottom: 1rem;
+              .count {
+                font-family: Raleway-Bold;
+                font-size: 26px;
+                color: #45c1bd;
+              }
+              .title {
+                font-family: Raleway-Bold;
+                font-size: 18px;
+                color: #707070;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 5rem;
+      width: 100%;
+      .right-side {
+        position: relative;
+        margin-bottom: 5rem;
+        left: -10rem;
+      }
+      .left-side {
+        width: 30%;
+        .what-we-do {
+          font-family: Raleway-Bold;
+          font-size: 28px;
+          color: #495057;
+        }
+        .description {
+          font-size: 18px;
+          color: #adb5bd;
+          margin-top: 18px;
+          margin-bottom: 24px;
+          line-height: 24px;
+        }
+
+        .play-video-btn {
+          .video-play-button {
+            position: relative;
+            box-sizing: content-box;
+            display: inline-block;
+            width: 32px;
+            height: 44px;
+            border-radius: 50%;
+            padding: 46px 8px 18px 28px;
+            &:before,
+            &:after {
+              content: '';
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              display: block;
+              width: 60px;
+              height: 60px;
+              background: linear-gradient(90deg, #4ba0f9 0%, #85f3f9 100%);
+              border-radius: 50%;
+              box-shadow: 0px 20px 30px rgba(171, 183, 192, 0.3);
+            }
+            &:before {
+              z-index: 0;
+              animation: pulse-border 2000ms ease-out infinite;
+            }
+            &:after {
+              z-index: 1;
+              transition: all 200ms ease;
+            }
+            span {
+              display: block;
+              position: relative;
+              z-index: 3;
+              width: 0;
+              height: 0;
+              border-left: 16px solid white;
+              border-top: 8px solid transparent;
+              border-bottom: 8px solid transparent;
+            }
+          }
+          .watch_video {
+            margin-left: 1rem;
+            h5 {
+              color: #707070;
+              font-size: 16px;
+            }
+            p {
+              color: #adb5bd;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .wave-img {
+      width: 100%;
+      position: relative;
+      bottom: 10rem;
+      z-index: -1;
+      margin-bottom: -5rem;
+    }
+  }
+}

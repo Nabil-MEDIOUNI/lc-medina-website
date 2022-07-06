@@ -1,0 +1,81 @@
+#formsection {
+  width: 100%;
+  margin-top: 5rem;
+  margin-left: 60vh;
+  padding-right: 0;
+  font-weight: 900;
+  font-size: 20px;
+  width: 652px;
+  text-align: left;
+  position: relative;
+  @media (max-width: 900px) {
+    margin-left: 0;
+    width: 100%;
+  }
+  .formgroup {
+    margin-top: 40px;
+    .labels {
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      .inputs {
+        padding: 12px;
+        width: 446px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      textarea {
+        width: 482px;
+        height: 150px;
+        padding: 12px 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+        margin-left: 6.5rem;
+      }
+    }
+    .agreelabel {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+  .submit-btn {
+    text-align: right;
+    button {
+      background: var(--unnamed-color-037ef3) 0% 0% no-repeat padding-box;
+      background: #037ef3 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+      border: none;
+      font-size: 18px;
+      color: #f8f9fa;
+      margin-top: 50px;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+.partners-section {
+  .title {
+    font-size: 24px;
+    margin-top: 62px;
+    margin-bottom: 50px;
+    font-weight: 900;
+  }
+  .partners {
+    display: flex;
+    width: 100%;
+    img {
+      justify-content: space-evenly;
+      width: 12rem;
+      margin-right: 100px;
+      margin-bottom: 78px;
+    }
+  }
+}

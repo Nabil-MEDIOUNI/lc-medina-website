@@ -1,0 +1,60 @@
+@import "./variables.scss";
+@import "./global.scss";
+
+/* ******************************** Lato ******************************* */
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato/Lato-Black.ttf");
+  font-display: swap;
+}
+
+/* ******************************** Raleway ******************************* */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway/Raleway-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway/Raleway-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  src: url("../fonts/Raleway/Raleway-Black.ttf");
+  font-display: swap;
+}

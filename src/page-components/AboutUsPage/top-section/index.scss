@@ -1,0 +1,88 @@
+.TopSection-container {
+  background: url("../../../assets/images/backgroundTopsection.svg") center;
+  width: 100%;
+  padding-top: 6.5rem;
+
+  @media (max-width: 900px) {
+    width: auto;
+    height: auto;
+  }
+  .Informations-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    img[alt="MedinaLogo"] {
+      width: 385px;
+      height: 606px;
+      margin: auto;
+      @media (max-width: 400px) {
+        width: 100% !important;
+      }
+      @media (max-width: 900px) {
+        width: auto;
+        height: auto;
+        margin: inherit;
+      }
+    }
+    .intro-info {
+      position: absolute;
+      top: 15%;
+      .animated-text {
+        @media (max-width: 900px) {
+          font-size: 24px;
+        }
+        padding-bottom: 0;
+        margin-bottom: 22px;
+        color: #00c16e;
+        font-weight: 400;
+        font-size: 52px;
+        text-align: center;
+        margin: auto 0;
+      }
+      .what-are-we {
+        text-align: center;
+        margin: 22px auto;
+        margin-bottom: 0;
+        color: #707070;
+        font-size: 30px;
+        letter-spacing: 0.2px;
+        width: 40%;
+        font-weight: 600;
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+      }
+      .description {
+        color: #00000066;
+        text-align: center;
+        margin: 14px auto;
+        margin-bottom: 0;
+        font-size: 27px;
+        letter-spacing: 0.14px;
+        width: 65%;
+        @media (max-width: 900px) {
+          width: 90%;
+          font-size: 16px;
+        }
+      }
+      .badge {
+        background: #00c16e;
+        color: #f8f9fa;
+        width: fit-content;
+        margin: 25px auto;
+        border-radius: 6px;
+        font-size: 17px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        padding: 4px 11px;
+        font-weight: 150;
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.footer {
+  margin-top: 5rem;
+  background-color: #00000005;
+  padding: 60px 0px;
+  position: relative;
+  .top-section {
+    width: 100%;
+    justify-content: space-around;
+    .about-medina {
+      width: 25%;
+    }
+    .single-item {
+      .title {
+        font-size: 16px;
+        font-family: Lato-Bold;
+        color: #037ef3;
+        margin-bottom: 18px;
+        white-space: nowrap;
+      }
+      .list-item a,
+      .medina-description {
+        font-size: 14px;
+        line-height: 20px;
+        color: #707070;
+      }
+      .list {
+        list-style: none;
+        .list-item {
+          margin-bottom: 12px;
+          a {
+            text-decoration: none;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-section {
+    margin-top: 60px;
+    .copyright {
+      font-size: 14px;
+      color: #707070;
+    }
+    .right-side {
+      .social-networks {
+        a {
+          line-height: 0;
+          img {
+            margin: 0 14px;
+            cursor: pointer;
+            opacity: 0.85;
+            width: 1.15rem;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .dot {
+        color: #707070;
+      }
+      .languages {
+        p {
+          font-size: 14px;
+          color: #707070;
+          margin-left: 20px;
+          border-bottom: 1px solid #707070;
+          cursor: pointer;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 50px 25px;
+    .top-section {
+      flex-direction: column;
+      .about-medina {
+        width: 90% !important;
+      }
+      .single-item {
+        .title {
+          margin-top: 30px;
+        }
+      }
+    }
+    .bottom-section {
+      flex-direction: column;
+      .copyright {
+        font-size: 13px;
+      }
+      .right-side {
+        margin-top: 30px;
+        .social-networks {
+          img {
+            margin: 0 !important;
+            margin-right: 20px !important;
+          }
+        }
+      }
+    }
+  }
+}

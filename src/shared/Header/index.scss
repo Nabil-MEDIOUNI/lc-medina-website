@@ -1,0 +1,103 @@
+.active-navbar {
+  background-color: white;
+  box-shadow: 0px 0px 6px #0000001a;
+}
+.navbar {
+  font-family: lato;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.1s ease-in-out;
+  .logo {
+    width: 70px;
+  }
+  .translation {
+    line-height: 0;
+    .translation-img {
+      margin-left: 40px;
+      width: 18px;
+    }
+  }
+  .nav-content {
+    text-align: center;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    .list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      .list-item {
+        position: relative;
+        &:hover {
+          .collapse-list {
+            visibility: visible;
+          }
+        }
+        .white-link {
+          color: white !important;
+        }
+        .link {
+          margin-left: 40px;
+          cursor: pointer;
+          padding-bottom: 3px;
+          text-decoration: none;
+          color: #707070;
+          transition: 0.2s ease-in-out;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0%;
+            width: 0%;
+            height: 1.5px;
+            background-color: #037ef3;
+            transition: all 0.15s linear;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          &:hover,
+          &:active {
+            color: #000;
+          }
+        }
+        .collapse-list {
+          transition: 0.05s ease-in-out;
+          visibility: hidden;
+          position: absolute;
+          margin-top: 0.75rem !important;
+          left: 2.5rem;
+          background-color: white;
+          box-shadow: 0px 0px 6px #0000001a;
+          border-radius: 2px;
+          list-style: none;
+          border-radius: 4px;
+          .collapse-item {
+            padding: 10px 20px 10px 14px;
+            text-align: left;
+            &:hover {
+              background: #0000000d;
+              a {
+                color: black;
+              }
+            }
+            a {
+              color: #707070;
+              text-decoration: none;
+              width: 100%;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}

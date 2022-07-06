@@ -1,0 +1,156 @@
+/* -------------------------------------------------------------------------- */
+/*                      Other globals than theme globals                      */
+/* -------------------------------------------------------------------------- */
+
+html,
+* {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.fluid {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-reversed {
+  flex-direction: row-reverse;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.items-flex-end {
+  align-items: flex-end;
+}
+
+.text-right {
+  text-align: -webkit-right;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-max {
+  width: 100% !important;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+.end {
+  align-items: flex-end;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.bottom {
+  margin-bottom: 20px !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mr-8 {
+  margin-right: 8px !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.float-right {
+  float: right;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

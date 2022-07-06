@@ -1,0 +1,17 @@
+#partnership-page {
+  display: flex;
+  flex-direction: row;
+  background-size: 567px 1080px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    .change-language {
+      display: none;
+    }
+  }
+  .change-language {
+    position: absolute;
+    top: 57px;
+    right: 4rem;
+    cursor: pointer;
+  }
+}

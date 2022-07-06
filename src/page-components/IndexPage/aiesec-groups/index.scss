@@ -1,0 +1,46 @@
+.aiesec-opps-section {
+  margin-top: 4rem;
+  .heading {
+    font-size: 24px;
+    font-family: Raleway-SemiBold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #495057;
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
+  .opps-container {
+    display: flex;
+    align-items: unset;
+    justify-content: center;
+    max-width: 1140px;
+    flex-wrap: wrap;
+    margin-top: -1rem;
+    @media (max-width: 900px) {
+      width: 100%;
+      .embed-container {
+        width: 100% !important;
+      }
+    }
+    .mc-nst-ceed {
+      height: 326px !important;
+    }
+    .embed-container {
+      margin: 1rem;
+      width: 500px;
+      height: 500px;
+      position: relative;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

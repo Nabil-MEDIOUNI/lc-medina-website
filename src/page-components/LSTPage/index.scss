@@ -1,0 +1,24 @@
+.lst-page {
+  display: flex;
+  flex-direction: column;
+  background: url("../../assets/images/backgroundTopsection.svg") top no-repeat;
+  margin-top: 5rem;
+  @media (max-width: 900px) {
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+  }
+  .subcontainer:first-child {
+    padding: 20%;
+  }
+  .textContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}

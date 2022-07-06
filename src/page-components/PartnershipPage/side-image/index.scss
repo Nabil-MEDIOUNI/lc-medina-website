@@ -1,0 +1,58 @@
+#side-image {
+  position: fixed;
+  background: url(../../../assets/images/azza.png);
+  width: 52vh;
+  height: 100vh;
+  background-size: cover;
+  z-index: 1;
+  left: 0;
+  @media (max-width: 900px) {
+    position: relative;
+    .sidetext {
+      bottom: 75px !important;
+    }
+    .side-logo {
+      left: 48px;
+    }
+    .gradient {
+      position: relative;
+    }
+  }
+  .side-logo {
+    top: 42px;
+    left: 40px;
+    width: 80px;
+    z-index: 2;
+    position: fixed;
+  }
+  .gradient {
+    position: fixed;
+    width: 52vh;
+    height: 100vh;
+    background-size: cover;
+    z-index: 1;
+    left: 0;
+    background: linear-gradient(180deg, #ffffff4f 0%, #000000e6 100%);
+    z-index: 1;
+  }
+  .sidetext {
+    position: absolute;
+    z-index: 2;
+    font-weight: 200;
+    color: white;
+    bottom: 30px;
+    border-left: 8px solid #ffc845;
+    padding-left: 10px;
+    margin: 0 40px;
+    font-size: 15px;
+    span {
+      margin-top: 0;
+      font-family: Lato;
+    }
+    p {
+      padding-top: 20px;
+      margin-bottom: 0;
+      font-family: Lato-Light;
+    }
+  }
+}

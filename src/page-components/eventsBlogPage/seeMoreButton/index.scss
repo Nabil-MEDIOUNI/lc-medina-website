@@ -1,0 +1,18 @@
+.Button {
+  background-color: #f85a40;
+  border: 0;
+  border-radius: 58px;
+  width: 261px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .textBox {
+    text-align: center;
+    font: normal normal bold 27px/33px Lato;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
